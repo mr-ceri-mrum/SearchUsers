@@ -17,8 +17,6 @@ namespace WebAppAPICrud.Controllers
             _context = context;
         }
 
-
-
         [HttpGet]
         public async Task<ActionResult<List<User>>> GetUserSearch(string? city = "", string? gender = "", int? before = null, int? after = null, DateTime? time = null)
         {
@@ -33,7 +31,6 @@ namespace WebAppAPICrud.Controllers
             if (city != "" & gender != "" & before == null & after == null & time == null)
             {
                 var users = await _context.Users.Where(u => u.City == city && u.Gender == gender).ToListAsync();
-               
                 return Ok(users);
             }
 
@@ -175,7 +172,6 @@ namespace WebAppAPICrud.Controllers
              {
                  var users = await _context.Users.Where(
                        u => u.Gender == gender && (u.Age >= before && u.Age <= after)).ToListAsync();
-                 
                  return Ok(users);
              }
              //Город и возраст от
@@ -192,7 +188,6 @@ namespace WebAppAPICrud.Controllers
              {
                  var users = await _context.Users.Where(
                       u => u.City == city && (u.Age >= before && u.Age <= after)).ToListAsync();
-                 
                   return Ok(users);
              }
              //возраст от
@@ -214,15 +209,10 @@ namespace WebAppAPICrud.Controllers
              //от и до
              if (gender == "" && city == "" & before != null & after != null && time == null)
              {
-                 var users = await _context.Users.Where(
-                     x => (x.Age >= before && x.Age <= after)).ToListAsync();
-                 
+                var users = await _context.Users.Where(x => (x.Age >= before && x.Age <= after)).ToListAsync();
                  return Ok(users);
              }
-
             return BadRequest("Not found ");
-
-            
         }
     }
 }
