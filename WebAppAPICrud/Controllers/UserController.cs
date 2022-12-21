@@ -53,7 +53,7 @@ namespace WebAppAPICrud.Controllers
                 user.City = request.City;
                 user.Number = request.Number;
                 user.Age = request.Age;
-                user.Gender = request.Gender;
+                
             
             _context.Users.Update(user);
             await _context.SaveChangesAsync();

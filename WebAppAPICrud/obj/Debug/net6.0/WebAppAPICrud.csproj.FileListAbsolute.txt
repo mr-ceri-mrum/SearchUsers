@@ -47,3 +47,9 @@ C:\C#\WebAppAPICrud\WebAppAPICrud\bin\Debug\net6.0\System.CodeDom.dll
 C:\C#\WebAppAPICrud\WebAppAPICrud\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\C#\WebAppAPICrud\WebAppAPICrud\bin\Debug\net6.0\System.Text.Json.dll
 C:\C#\WebAppAPICrud\WebAppAPICrud\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\C#\WebAppAPICrud\WebAppAPICrud\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\C#\WebAppAPICrud\WebAppAPICrud\bin\Debug\net6.0\SendGrid.dll
+C:\C#\WebAppAPICrud\WebAppAPICrud\bin\Debug\net6.0\StarkbankEcdsa.dll
+C:\C#\WebAppAPICrud\WebAppAPICrud\bin\Debug\net6.0\MailKit.dll
+C:\C#\WebAppAPICrud\WebAppAPICrud\bin\Debug\net6.0\MimeKit.dll
+C:\C#\WebAppAPICrud\WebAppAPICrud\bin\Debug\net6.0\BouncyCastle.Crypto.dll
