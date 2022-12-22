@@ -30,7 +30,7 @@ namespace WebAppAPICrud.Controllers
 
                 using var smtp = new SmtpClient();
                 smtp.Connect("smtp.ethereal.email", 587, SecureSocketOptions.StartTls);
-                smtp.Authenticate("devante34@ethereal.email", "8d2qrycsrqmZeggNdg");
+                smtp.Authenticate("devante34@ethereal.email", "pass");
                 smtp.Send(email);
                 smtp.Disconnect(true);
 
@@ -46,7 +46,7 @@ namespace WebAppAPICrud.Controllers
         public async Task<ActionResult> Execute(string text, string name, string phone)
         {
             
-            var apiKey = "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";
+            var apiKey = "key";
 
             var client = new SendGridClient(apiKey);
 
